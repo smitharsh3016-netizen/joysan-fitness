@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joysan Fitness | TRAIN BEYOND LIMITS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Remix Icon for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn-call,
+        .btn-whatsapp-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+            /* fallback or match theme */
+            text-transform: uppercase;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .btn-call {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-call:hover {
+            background: #fff;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-whatsapp-hero {
+            background: #25D366;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-whatsapp-hero:hover {
+            background: #20bd5a;
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.6);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-call,
+            .btn-whatsapp-hero {
+                width: 100%;
+                justify-content: center;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">JOYSAN FITNESS</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#membership">Join</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="float-animation">TRAIN BEYOND LIMITS</h1>
+            <p class="float-animation delay-1">Joysan Fitness | Strength & Conditioning
+            </p>
+            <a href="#about" class="btn-glow float-animation delay-2">Get Started</a>
+
+            <div class="hero-buttons float-animation delay-2">
+                <a href="tel:+917972919768" class="btn-call">
+                    <i class="ri-phone-fill"></i> Call Now
+                </a>
+                <a href="https://wa.me/917972919768" target="_blank" class="btn-whatsapp-hero">
+                    <i class="ri-whatsapp-line"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="hero-bg-overlay"></div>
+        <div class="stars"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Joysan Training</h2>
+            <div class="about-grid">
+                <div class="feature-card">
+                    <i class="ri-rocket-2-line feature-icon"></i>
+                    <h3>Suspension Training</h3>
+                    <p>Conquer resistance as your personal power source.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="ri-scales-3-line feature-icon"></i>
+                    <h3>Bodyweight Physics</h3>
+                    <p>Master leverage and momentum for functional power.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="ri-contrast-drop-line feature-icon"></i>
+                    <h3>Resistance Bands</h3>
+                    <p>Variable tension to maximize explosive strength.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="ri-focus-3-line feature-icon"></i>
+                    <h3>Controlled Instability</h3>
+                    <p>Engage deep stabilizers for bulletproof core strength.</p>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2>Training Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="card-content">
+                        <i class="ri-flight-takeoff-line program-icon"></i>
+                        <h3>Joysan Beginner</h3>
+                        <p>Intro to suspension & foundation.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-content">
+                        <i class="ri-coreos-line program-icon"></i>
+                        <h3>Core & Stability</h3>
+                        <p>Balance focus & deep core work.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-content">
+                        <i class="ri-music-line program-icon"></i> <!-- muscle icon fix -->
+                        <h3>Muscle Build</h3>
+                        <p>Low impact, high hypertrophy.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="card-content">
+                        <i class="ri-hospital-line program-icon"></i>
+                        <h3>Mobility & Rehab</h3>
+                        <p>Joint health & injury recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <h2>Join the Movement</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>1 Month</h3>
+                    <div class="price">₹700</div>
+                    <ul class="features">
+                        <li>Full Gym Access</li>
+                        <li>Basic Assistance</li>
+                    </ul>
+                    <a href="#contact" class="btn-outline">Select</a>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-tag">MOST POPULAR</div>
+                    <h3>12 Months</h3>
+                    <div class="price">₹8400</div>
+                    <ul class="features">
+                        <li>Full Access + Classes</li>
+                        <li>Personal Trainer Session</li>
+                        <li>Free Diet Plan</li>
+                    </ul>
+                    <a href="#contact" class="btn-glow">Select</a>
+                </div>
+                <div class="price-card">
+                    <h3>3 Months</h3>
+                    <div class="price">₹2100</div>
+                    <ul class="features">
+                        <li>Full Gym Access</li>
+                        <li>Group Classes</li>
+                    </ul>
+                    <a href="#contact" class="btn-outline">Select</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Section -->
+    <section class="transformation">
+        <div class="container">
+            <h2 class="quote">"Comfort zones break you. We rebuild you."</h2>
+            <div class="transformation-grid">
+                <div class="trans-card left-slide">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop"
+                        alt="Before - Limited Mobility" class="trans-img">
+                    <div class="card-info">
+                        <h4>Starting Point</h4>
+                        <p>Limited mobility, weak core.</p>
+                    </div>
+                </div>
+                <div class="trans-arrow"><i class="ri-arrow-right-double-line"></i></div>
+                <div class="trans-card right-slide">
+                    <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=800&auto=format&fit=crop"
+                        alt="After - Elite Strength" class="trans-img">
+                    <div class="card-info">
+                        <h4>Limits Defied</h4>
+                        <p>Full range of motion, elite strength.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Start Your Journey</h2>
+            <div class="contact-wrapper">
+                <div class="address-box">
+                    <i class="ri-map-pin-line"></i>
+                    <p>Haripriya multipurpose hall, The Maharashtra housing society, Shahunagar, Vijaynagar, Sangli,
+                        Sangli Miraj Kupwad, Maharashtra 416414</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.604868766164!2d74.5966603148695!3d16.84594618840506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1237f52c65db5%3A0x2869563459146c5!2sHaripriya%20Multipurpose%20Hall!5e0!3m2!1sen!2sin!4v1644330000000!5m2!1sen!2sin"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="" disabled selected>Select Your Goal</option>
+                            <option value="strength">Strength</option>
+                            <option value="mobility">Mobility</option>
+                            <option value="rehab">Rehab</option>
+                            <option value="general">General Fitness</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-glow">Send Message</button>
+                </form>
+
+                <div class="whatsapp-container">
+                    <a href="#" class="btn-whatsapp">
+                        <i class="ri-whatsapp-line"></i> Join via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+            </div>
+            <p class="footer-address">Haripriya Multipurpose Hall, Sangli, Maharashtra 416414</p>
+            <p>&copy; 2026 Joysan Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.trans-card, .feature-card, .program-card, .price-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
